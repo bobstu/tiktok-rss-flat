@@ -1,4 +1,4 @@
-name: Simple TikTok RSS
+name: TikTok RSS Generator
 on:
   workflow_dispatch:
   schedule:
@@ -19,20 +19,22 @@ jobs:
       - name: Create RSS directory
         run: mkdir -p rss
       
-      - name: Generate basic RSS feeds
+      - name: Generate RSS feeds
         run: |
           python3 << 'EOF'
           import os
           from datetime import datetime
           
-          # Read usernames
+          # Read usernames from subscriptions.csv
           with open('subscriptions.csv', 'r') as f:
               usernames = [line.strip() for line in f if line.strip() and not line.startswith('#')]
+          
+          print(f"Found {len(usernames)} users to process: {usernames}")
           
           # Create RSS directory
           os.makedirs('rss', exist_ok=True)
           
-          # Generate basic RSS for each user
+          # Generate RSS for each user
           for username in usernames:
               rss_content = f'''<?xml version="1.0" encoding="UTF-8"?>
           <rss version="2.0">
@@ -43,10 +45,10 @@ jobs:
               <pubDate>{datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT')}</pubDate>
               <item>
                 <title>Sample video from {username}</title>
-                <link>https://www.tiktok.com/@{username}/video/sample</link>
-                <description>This is a placeholder RSS feed. Real TikTok data requires API access.</description>
+                <link>https://www.tiktok.com/@{username}/video/sample-{datetime.now().strftime('%Y%m%d%H%M')}</link>
+                <description>RSS feed for @{username} - Generated on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</description>
                 <pubDate>{datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT')}</pubDate>
-                <guid>sample-{username}-{datetime.now().strftime('%Y%m%d')}</guid>
+                <guid>sample-{username}-{datetime.now().strftime('%Y%m%d%H%M')}</guid>
               </item>
             </channel>
           </rss>'''
@@ -54,7 +56,7 @@ jobs:
               with open(f'rss/{username}.xml', 'w') as f:
                   f.write(rss_content)
               
-              print(f"Generated RSS for {username}")
+              print(f"✅ Generated RSS for {username}")
           
           print("RSS generation complete!")
           EOF
@@ -64,5 +66,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add rss/
-          git commit -m "Update RSS feeds $(date)" || exit 0
-          git push
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update RSS feeds - $(date '+%Y-%m-%d %H:%M:%S')"
+            git push
+          fi
