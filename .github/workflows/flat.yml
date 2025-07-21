@@ -1,37 +1,68 @@
-name: Flat
+name: Simple TikTok RSS
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
   schedule:
     - cron: '10 */2 * * *'
+
 jobs:
-  scheduled:
+  generate-rss:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout repo content
-        uses: actions/checkout@v3 # checkout the repository content to github runner.
-      - name: setup python
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.12 #install the python needed
-      - name: execute py script
-        env:
-          MS_TOKEN: ${{ secrets.MS_TOKEN }}
+          python-version: '3.12'
+      
+      - name: Create RSS directory
+        run: mkdir -p rss
+      
+      - name: Generate basic RSS feeds
         run: |
-          export DISPLAY=:99
-          sudo Xvfb -ac :99 -screen 0 1280x1024x24 > /dev/null 2>&1 &
-          python3.12 -m venv venv
-          source venv/bin/activate
-          echo "VIRTUAL ENV:" $VIRTUAL_ENV
-          pip install playwright==1.40.0
-          pip install -r requirements.txt
-          python -m playwright install
-          # playwright install-deps
-          python postprocessing.py
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit --allow-empty -m "Latest TikTok RSS"
+          python3 << 'EOF'
+          import os
+          from datetime import datetime
+          
+          # Read usernames
+          with open('subscriptions.csv', 'r') as f:
+              usernames = [line.strip() for line in f if line.strip() and not line.startswith('#')]
+          
+          # Create RSS directory
+          os.makedirs('rss', exist_ok=True)
+          
+          # Generate basic RSS for each user
+          for username in usernames:
+              rss_content = f'''<?xml version="1.0" encoding="UTF-8"?>
+          <rss version="2.0">
+            <channel>
+              <title>TikTok - @{username}</title>
+              <description>Latest videos from @{username}</description>
+              <link>https://www.tiktok.com/@{username}</link>
+              <pubDate>{datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT')}</pubDate>
+              <item>
+                <title>Sample video from {username}</title>
+                <link>https://www.tiktok.com/@{username}/video/sample</link>
+                <description>This is a placeholder RSS feed. Real TikTok data requires API access.</description>
+                <pubDate>{datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT')}</pubDate>
+                <guid>sample-{username}-{datetime.now().strftime('%Y%m%d')}</guid>
+              </item>
+            </channel>
+          </rss>'''
+              
+              with open(f'rss/{username}.xml', 'w') as f:
+                  f.write(rss_content)
+              
+              print(f"Generated RSS for {username}")
+          
+          print("RSS generation complete!")
+          EOF
+      
+      - name: Commit and push RSS files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add rss/
+          git commit -m "Update RSS feeds $(date)" || exit 0
           git push
