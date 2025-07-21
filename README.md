@@ -3,6 +3,7 @@
 
 Generate usable RSS feeds from TikTok using GitHub Actions and GitHub Pages.
 
+RSS feeds updated: 2025-07-21
 
 **NOTE March 2024: This seems to work again due to improvements in the original TikTok library. It requires an on-the-fly patch to that underlying TikTok library, which is hopefully only temporary**
 
