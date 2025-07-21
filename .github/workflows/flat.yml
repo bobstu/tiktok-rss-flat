@@ -1,74 +1,25 @@
-name: TikTok RSS Generator
+name: Flat Data TikTok RSS
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
   schedule:
     - cron: '10 */2 * * *'
 
 jobs:
-  generate-rss:
+  scheduled:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      
-      - name: Setup Python
-        uses: actions/setup-python@v4
+      - name: Setup deno
+        uses: denoland/setup-deno@v1
         with:
-          python-version: '3.12'
-      
-      - name: Create RSS directory
-        run: mkdir -p rss
-      
-      - name: Generate RSS feeds
-        run: |
-          python3 << 'EOF'
-          import os
-          from datetime import datetime
-          
-          # Read usernames from subscriptions.csv
-          with open('subscriptions.csv', 'r') as f:
-              usernames = [line.strip() for line in f if line.strip() and not line.startswith('#')]
-          
-          print(f"Found {len(usernames)} users to process: {usernames}")
-          
-          # Create RSS directory
-          os.makedirs('rss', exist_ok=True)
-          
-          # Generate RSS for each user
-          for username in usernames:
-              rss_content = f'''<?xml version="1.0" encoding="UTF-8"?>
-          <rss version="2.0">
-            <channel>
-              <title>TikTok - @{username}</title>
-              <description>Latest videos from @{username}</description>
-              <link>https://www.tiktok.com/@{username}</link>
-              <pubDate>{datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT')}</pubDate>
-              <item>
-                <title>Sample video from {username}</title>
-                <link>https://www.tiktok.com/@{username}/video/sample-{datetime.now().strftime('%Y%m%d%H%M')}</link>
-                <description>RSS feed for @{username} - Generated on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</description>
-                <pubDate>{datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT')}</pubDate>
-                <guid>sample-{username}-{datetime.now().strftime('%Y%m%d%H%M')}</guid>
-              </item>
-            </channel>
-          </rss>'''
-              
-              with open(f'rss/{username}.xml', 'w') as f:
-                  f.write(rss_content)
-              
-              print(f"✅ Generated RSS for {username}")
-          
-          print("RSS generation complete!")
-          EOF
-      
-      - name: Commit and push RSS files
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add rss/
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Update RSS feeds - $(date '+%Y-%m-%d %H:%M:%S')"
-            git push
-          fi
+          deno-version: v1.x
+      - name: Check out repo
+        uses: actions/checkout@v3
+      - name: Fetch data
+        uses: githubocto/flat@v3
+        with:
+          http_url: https://www.tiktok.com
+          downloaded_filename: tiktok-data.json
+          postprocess: postprocessing.js
