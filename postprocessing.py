@@ -19,12 +19,8 @@ context_options = {
 
 # Edit config.py to change your URLs
 ghRawURL = config.ghRawURL
-
 api = TikTokApi()
-
-ms_token = os.environ.get(
-    "MS_TOKEN", None
-)
+ms_token = os.environ.get("MS_TOKEN", None)
 
 async def runscreenshot(playwright: Playwright, url, screenshotpath):
     chromium = playwright.chromium # or "firefox" or "webkit".
@@ -36,14 +32,11 @@ async def runscreenshot(playwright: Playwright, url, screenshotpath):
     await browser.close()
 
 async def user_videos():
-
     with open('subscriptions.csv') as f:
         cf = csv.DictReader(f, fieldnames=['username'])
         for row in cf:
             user = row['username']
-
             print(f'Running for user \'{user}\'')
-
             fg = FeedGenerator()
             fg.id('https://www.tiktok.com/@' + user)
             fg.title(user + ' TikTok')
@@ -53,16 +46,16 @@ async def user_videos():
             fg.subtitle('OK Boomer, all the latest TikToks from ' + user)
             fg.link( href=ghRawURL + 'rss/' + user + '.xml', rel='self' )
             fg.language('en')
-
             # Set the last modification time for the feed to be the most recent post, else now.
             updated=None
             
             async with TikTokApi() as api:
                 await api.create_sessions(num_sessions=1, sleep_after=10, headless=False)
                 try:
+                    # Get the user object from the API - THIS WAS MISSING!
+                    ttuser = api.user(user)
                     user_data = await ttuser.info()
                     #print(user_data)
-
                     async for video in ttuser.videos(count=10):
                         fe = fg.add_entry()
                         link = "https://tiktok.com/@" + user + "/video/" + video.id
@@ -85,7 +78,6 @@ async def user_videos():
                             parsed_url = urlparse(videourl)
                             path_segments = parsed_url.path.split('/')
                             last_segment = [seg for seg in path_segments if seg][-1]
-
                             screenshotsubpath = "thumbnails/" + user + "/screenshot_" + last_segment + ".jpg"
                             screenshotpath = os.path.dirname(os.path.realpath(__file__)) + "/" + screenshotsubpath
                             if not os.path.isfile(screenshotpath):
@@ -96,7 +88,6 @@ async def user_videos():
                             #content = screenshoturl + ' ' + content    
                             #content = '<media:content url="' + screenshoturl + '" type="image/jpeg" medium="image"> ' + content 
                             #content = '<![CDATA[<img src="' + screenshoturl + '" />]]> ' + content
-
                         fe.content(content)
                     fg.updated(updated)
                     fg.rss_file('rss/' + user + '.xml', pretty=True) # Write the RSS feed to a file
@@ -104,7 +95,6 @@ async def user_videos():
                         #print(video.as_dict)
                 except Exception as e:
                     print(e)
-
 
 if __name__ == "__main__":
     asyncio.run(user_videos())
