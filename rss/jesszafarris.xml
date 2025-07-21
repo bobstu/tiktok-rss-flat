@@ -1,16 +1,277 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
-    <title>TikTok - @jesszafarris</title>
-    <description>Latest videos from @jesszafarris</description>
-    <link>https://www.tiktok.com/@jesszafarris</link>
-    <pubDate>Mon, 21 Jul 2025 13:02:37 GMT</pubDate>
+    <title>jesszafarris TikTok</title>
+    <link>https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/rss/jesszafarris.xml</link>
+    <description>OK Boomer, all the latest TikToks from jesszafarris</description>
+    <atom:link href="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/rss/jesszafarris.xml" rel="self"/>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <image>
+      <url>https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/tiktok-rss.png</url>
+      <title>jesszafarris TikTok</title>
+      <link>https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/rss/jesszafarris.xml</link>
+    </image>
+    <language>en</language>
+    <lastBuildDate>Wed, 16 Jul 2025 19:27:32 +0000</lastBuildDate>
     <item>
-      <title>Sample video from jesszafarris</title>
-      <link>https://www.tiktok.com/@jesszafarris/video/sample-202507211302</link>
-      <description>RSS feed for @jesszafarris - Generated on 2025-07-21 13:02:37</description>
-      <pubDate>Mon, 21 Jul 2025 13:02:37 GMT</pubDate>
-      <guid>sample-jesszafarris-202507211302</guid>
+      <title>Why Samuel Johnson panned the word “clever.” #etymology #etymologytok #history #literature #samueljohnson #janeausten #booktok #wordorigins </title>
+      <link>https://tiktok.com/@jesszafarris/video/7374534501164272938</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_oIPEBqfBJEzlIVzC5ns6BK08XBBAqi4AiAAJIw.image.jpg" / &gt; Why Samuel Johnson panned the word “clever.” #etymology #etymologytok #history #literature #samueljohnson #janeausten #booktok #wordorigins </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7374534501164272938</guid>
+      <pubDate>Wed, 29 May 2024 21:20:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>Revisiting the origin of “hoist with your own petard” #etymology #etymologytok #idioms #phrases #education #wordorigins </title>
+      <link>https://tiktok.com/@jesszafarris/video/7377443488494865710</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_o0AIAEyAjHBEMA8fhAPwBfc3ejLDIEFIk5gHiJ.image.jpg" / &gt; Revisiting the origin of “hoist with your own petard” #etymology #etymologytok #idioms #phrases #education #wordorigins </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7377443488494865710</guid>
+      <pubDate>Thu, 06 Jun 2024 17:28:42 +0000</pubDate>
+    </item>
+    <item>
+      <title>Did you know that sideburns were eponymously named after General Ambrose E. Burnside? Burnside was also an inventor and governor of Rhode Island for three terms. #etymology #history #language #linguistics #civilwar #etymologytok #ushistory #eponym #wordne</title>
+      <link>https://tiktok.com/@jesszafarris/video/7380915044315401515</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_oABECA3ziiAmWNAwIIbBJSq4yGRAO8zuLBSfBy.image.jpg" / &gt; Did you know that sideburns were eponymously named after General Ambrose E. Burnside? Burnside was also an inventor and governor of Rhode Island for three terms. #etymology #history #language #linguistics #civilwar #etymologytok #ushistory #eponym #wordne</description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7380915044315401515</guid>
+      <pubDate>Sun, 16 Jun 2024 02:00:07 +0000</pubDate>
+    </item>
+    <item>
+      <title>What’s your favorite retronym? Not to be confused with a back-formation, when a simpler—or often simpler—version of a word is reverse engineered from a more complex one, typically after it’s adopted directly trom a langauge such as French or Latin. #etymo</title>
+      <link>https://tiktok.com/@jesszafarris/video/7384196905548500266</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_oYrz9KA8fAI35fDCADjMlfE43EHkFIAUY9AQo4.image.jpg" / &gt; What’s your favorite retronym? Not to be confused with a back-formation, when a simpler—or often simpler—version of a word is reverse engineered from a more complex one, typically after it’s adopted directly trom a langauge such as French or Latin. #etymo</description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7384196905548500266</guid>
+      <pubDate>Mon, 24 Jun 2024 22:15:26 +0000</pubDate>
+    </item>
+    <item>
+      <title>What do you think of this word? Thank you @Matt Rogers and @bowen yang! #etymology #etymologytok #wordorigins #legebatique #pridemonth #lgbt🏳️‍🌈 </title>
+      <link>https://tiktok.com/@jesszafarris/video/7384926128391130414</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_okdUhZiE8NZ8EBA9igH4BAkAAAnyIzdbiBVwv.image.jpg" / &gt; What do you think of this word? Thank you @Matt Rogers and @bowen yang! #etymology #etymologytok #wordorigins #legebatique #pridemonth #lgbt🏳️‍🌈 </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7384926128391130414</guid>
+      <pubDate>Wed, 26 Jun 2024 21:25:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>Pretty sure the pronunciation of the æ is shorter than the way I said it, so i invite my friends who have more knowledge of Old English pronunciation stored in their brain-lockers to demonstrate. What do you like to house in your brægnloca? #etymology #hi</title>
+      <link>https://tiktok.com/@jesszafarris/video/7388231324168916270</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_o83N1LqOAAADAjeaAIWKEikMN8eeNoIQHIEEQQ.image.jpg" / &gt; Pretty sure the pronunciation of the æ is shorter than the way I said it, so i invite my friends who have more knowledge of Old English pronunciation stored in their brain-lockers to demonstrate. What do you like to house in your brægnloca? #etymology #hi</description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7388231324168916270</guid>
+      <pubDate>Fri, 05 Jul 2024 19:11:04 +0000</pubDate>
+    </item>
+    <item>
+      <title>Fun with ghost words! 👻 dord, feamyng, kimes, abacot and more. #etymology #history #wordorigins #books #printing #language #etymologytok </title>
+      <link>https://tiktok.com/@jesszafarris/video/7394561823044865323</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_oMQGNPAkAYhYIEGJvCWHtTAAIEktefAIkAeLjw.image.jpg" / &gt; Fun with ghost words! 👻 dord, feamyng, kimes, abacot and more. #etymology #history #wordorigins #books #printing #language #etymologytok </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7394561823044865323</guid>
+      <pubDate>Mon, 22 Jul 2024 20:36:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>Sharing an oldie but a goodie from three yeara ago! My misspelling confession + the etymology of “sacrilegious.” What word is this for you? #etymology #wordorigins #history #language #spelling #education #englishlearning </title>
+      <link>https://tiktok.com/@jesszafarris/video/7398241588176063787</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_oQ9FSFDfREDkFQAMbXEIUWCAqAKgxrAYqmfA7F.image.jpg" / &gt; Sharing an oldie but a goodie from three yeara ago! My misspelling confession + the etymology of “sacrilegious.” What word is this for you? #etymology #wordorigins #history #language #spelling #education #englishlearning </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7398241588176063787</guid>
+      <pubDate>Thu, 01 Aug 2024 18:35:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>The etymology of dachshund, poodle, basenji and many more! #etymology #wordorigins #etymologytok #dogs #poodle #basenji #saluki #dachshund #dogsoftiktok #corgi #shibainu </title>
+      <link>https://tiktok.com/@jesszafarris/video/7401197548427316526</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_oAfEUflswgiRDkAQAR9EA4CSqDtFIExKm1XbAF.image.jpg" / &gt; The etymology of dachshund, poodle, basenji and many more! #etymology #wordorigins #etymologytok #dogs #poodle #basenji #saluki #dachshund #dogsoftiktok #corgi #shibainu </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7401197548427316526</guid>
+      <pubDate>Fri, 09 Aug 2024 17:46:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>Dog breed etymology part 2, including beagles, collies, huskies, shar peis, pugs and more. Unfortunately some of these arent so culturally appropriate. #etymology #dogs #wordorigins #etymologytok #history #language #beagle #collie #bordercollie #husky #sc</title>
+      <link>https://tiktok.com/@jesszafarris/video/7402358750486613290</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_okmFI03EADEeTgAAc76CfFCxYDSPXQ2PRnuTbA.image.jpg" / &gt; Dog breed etymology part 2, including beagles, collies, huskies, shar peis, pugs and more. Unfortunately some of these arent so culturally appropriate. #etymology #dogs #wordorigins #etymologytok #history #language #beagle #collie #bordercollie #husky #sc</description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7402358750486613290</guid>
+      <pubDate>Mon, 12 Aug 2024 20:52:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>Your friendly neighborhood etymology dork, quoted in this very demure, very mindful article in @The Guardian today talking about the origin of “demure” as defined by @Jools Lebron 😄#greenscreenvideo #etymology #demure #wordorigins </title>
+      <link>https://tiktok.com/@jesszafarris/video/7403864839535299883</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_oE9L2AelQfgAAnMLifAOQgLIHfA0A1f7GCczSj.image.jpg" / &gt; Your friendly neighborhood etymology dork, quoted in this very demure, very mindful article in @The Guardian today talking about the origin of “demure” as defined by @Jools Lebron 😄#greenscreenvideo #etymology #demure #wordorigins </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7403864839535299883</guid>
+      <pubDate>Fri, 16 Aug 2024 22:17:04 +0000</pubDate>
+    </item>
+    <item>
+      <title>The etymooooooogy of peculiar! There was also a word, “peculate,” meaning “embezzle” in 18th century English. #etymology #wordorigins #etymologytok #cattle #cows #history #edutok </title>
+      <link>https://tiktok.com/@jesszafarris/video/7407568416480972075</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_oEftebAGeAJaAGG3RDQZBdQAcLGtfMzAhIIIOU.image.jpg" / &gt; The etymooooooogy of peculiar! There was also a word, “peculate,” meaning “embezzle” in 18th century English. #etymology #wordorigins #etymologytok #cattle #cows #history #edutok </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7407568416480972075</guid>
+      <pubDate>Mon, 26 Aug 2024 21:48:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>Words we need or want but don’t have: word fugitives and sniglets. (These are also called “protologisms” and are types of nonce words.) Books:  Word Fugitives: In Pursuit of Wanted Words by Barbara Wallraff Sniglets (Snig'Lit : Any Word That Doesn't Appea</title>
+      <link>https://tiktok.com/@jesszafarris/video/7408634124950359339</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_oEhGESEFADAYweAAAMFxDRmADESg7CO0IlfgQE.image.jpg" / &gt; Words we need or want but don’t have: word fugitives and sniglets. (These are also called “protologisms” and are types of nonce words.) Books:  Word Fugitives: In Pursuit of Wanted Words by Barbara Wallraff Sniglets (Snig'Lit : Any Word That Doesn't Appea</description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7408634124950359339</guid>
+      <pubDate>Thu, 29 Aug 2024 18:44:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>Note: Some of these words arose in Old and Middle English, others in the 1500s and later. I’ve used a short “i” to pronounce these words, reflecting the Modern English pronunciation, but Old English “lic” is pronounced “leech,” and that would persist unti</title>
+      <link>https://tiktok.com/@jesszafarris/video/7414520419245378859</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_ooE9yAREEDAfwIDlAmAgZf0mSCFsVq5Dao6PQt.image.jpg" / &gt; Note: Some of these words arose in Old and Middle English, others in the 1500s and later. I’ve used a short “i” to pronounce these words, reflecting the Modern English pronunciation, but Old English “lic” is pronounced “leech,” and that would persist unti</description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7414520419245378859</guid>
+      <pubDate>Sat, 14 Sep 2024 15:26:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>The unhorsey etymology of “nightmare”! #etymology #etymologytok #wordorigins #halloween #history #books #booktok #authorsoftiktok </title>
+      <link>https://tiktok.com/@jesszafarris/video/7421257780763413803</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_o8fjyfEDbA7qd9kqIwqnm6AEDfA0FHA4zEANZI.image.jpg" / &gt; The unhorsey etymology of “nightmare”! #etymology #etymologytok #wordorigins #halloween #history #books #booktok #authorsoftiktok </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7421257780763413803</guid>
+      <pubDate>Wed, 02 Oct 2024 19:10:33 +0000</pubDate>
+    </item>
+    <item>
+      <title>Have you riddled out the original charades and their etymology?  • • • #etymology #riddle #wordorigins #puzzles #linguistics #language #history #booktok #janeausten #english #authorsoftiktok </title>
+      <link>https://tiktok.com/@jesszafarris/video/7429807931203325227</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_owIAgIteff3QnMRGx6bcKALX8AfG1BAOAczFvJ.image.jpg" / &gt; Have you riddled out the original charades and their etymology?  • • • #etymology #riddle #wordorigins #puzzles #linguistics #language #history #booktok #janeausten #english #authorsoftiktok </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7429807931203325227</guid>
+      <pubDate>Fri, 25 Oct 2024 20:09:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>The etymology of skeleton, bone, skull and osseous words at large. 💀  • • • #etymology #wordorigins #etymologytok #skeleton #spooky #halloween #linguistics </title>
+      <link>https://tiktok.com/@jesszafarris/video/7430881632787369262</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_o4B54LAO7IABTA1OAeATQyIfecIAREHkmGWjPL.image.jpg" / &gt; The etymology of skeleton, bone, skull and osseous words at large. 💀  • • • #etymology #wordorigins #etymologytok #skeleton #spooky #halloween #linguistics </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7430881632787369262</guid>
+      <pubDate>Mon, 28 Oct 2024 17:36:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>The etymology of phobias! #etymology #history #language #wordorigins #psychology #booktok #authortok</title>
+      <link>https://tiktok.com/@jesszafarris/video/7432039495006031150</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_oEiW6AfdkRIAf6rAEDAnE1FEdPA2AOjIDhHeE6~tplv-tiktokx-origin.image.jpg" / &gt; The etymology of phobias! #etymology #history #language #wordorigins #psychology #booktok #authortok</description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7432039495006031150</guid>
+      <pubDate>Thu, 31 Oct 2024 20:29:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>#stitch with @Matt Stache — Hopefully this explanation isn’t too patronizing! #etymology #patronus #history #etymologytok #language #arts #wordorigins </title>
+      <link>https://tiktok.com/@jesszafarris/video/7439786478097468715</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_o4DnAn2CHG5EEjFRBtQALWAS7bgfklzfABPImD.image.jpg" / &gt; #stitch with @Matt Stache — Hopefully this explanation isn’t too patronizing! #etymology #patronus #history #etymologytok #language #arts #wordorigins </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7439786478097468715</guid>
+      <pubDate>Thu, 21 Nov 2024 17:31:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>A lovely little book of gramograms by @robmeyerson and @Danmisdea! #etymology #etymologytok #booktok #wordpuzzles #puzzles #games #books @The New Yorker #gramogram </title>
+      <link>https://tiktok.com/@jesszafarris/video/7440158762423405866</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_o4DABkuWEigAjBnBaBBiQAAIEAZw4A6BP5Z03.image.jpg" / &gt; A lovely little book of gramograms by @robmeyerson and @Danmisdea! #etymology #etymologytok #booktok #wordpuzzles #puzzles #games #books @The New Yorker #gramogram </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7440158762423405866</guid>
+      <pubDate>Fri, 22 Nov 2024 17:36:01 +0000</pubDate>
+    </item>
+    <item>
+      <title>The etymology of conundrum! #etymology #etymologytok #booktok #wordpuzzles #puzzles #games #riddles #wordorigins #dictionary </title>
+      <link>https://tiktok.com/@jesszafarris/video/7448003924856032555</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_oM6IEhiB4PAc2i1gAIoByBSAZAEh5CgBmikbO.image.jpg" / &gt; The etymology of conundrum! #etymology #etymologytok #booktok #wordpuzzles #puzzles #games #riddles #wordorigins #dictionary </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7448003924856032555</guid>
+      <pubDate>Fri, 13 Dec 2024 20:59:14 +0000</pubDate>
+    </item>
+    <item>
+      <title>We’re doing photos now? #etymology #etymologytok #booktok #wordorigins #history</title>
+      <link>https://tiktok.com/@jesszafarris/video/7454666276351266090</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_3482f16bc2134f359b3bee7e529f6cf5~tplv-photomode-image.jpeg.jpg" / &gt; We’re doing photos now? #etymology #etymologytok #booktok #wordorigins #history</description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7454666276351266090</guid>
+      <pubDate>Tue, 31 Dec 2024 19:52:32 +0000</pubDate>
+    </item>
+    <item>
+      <title>The many words with roads hiding in them! The etymology of via—and much love to everyone. #etymologytok #etymology #booktok #wordorigins #history #language #learning #edutok </title>
+      <link>https://tiktok.com/@jesszafarris/video/7460995891588091179</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_o4EiEJFQAeSEFlPKDADAIhinREngyCCEAsE6fU.image.jpg" / &gt; The many words with roads hiding in them! The etymology of via—and much love to everyone. #etymologytok #etymology #booktok #wordorigins #history #language #learning #edutok </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7460995891588091179</guid>
+      <pubDate>Fri, 17 Jan 2025 21:14:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>My sinistral shibboleths ✨ What’s your favorite negative review of your book? #authortok #authorsoftiktok #booktok #books #etymology #etymologytok #wordorigins #history #language </title>
+      <link>https://tiktok.com/@jesszafarris/video/7468346829374180654</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_ocFXeAOnpAZGDmtAE1kOFRyCS0JfQIEAEQqgID.image.jpg" / &gt; My sinistral shibboleths ✨ What’s your favorite negative review of your book? #authortok #authorsoftiktok #booktok #books #etymology #etymologytok #wordorigins #history #language </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7468346829374180654</guid>
+      <pubDate>Thu, 06 Feb 2025 16:40:14 +0000</pubDate>
+    </item>
+    <item>
+      <title>The first book to be called the Great American Novel might not be the one you’d expect. #etymology #etymologytok #history #wordorigins #booktok #books #classicliterature #literature #americanhistory </title>
+      <link>https://tiktok.com/@jesszafarris/video/7481743272214465838</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_okAHuvPJAej4QVSIXPANjQgMRAckqAeEcW8f9d.image.jpg" / &gt; The first book to be called the Great American Novel might not be the one you’d expect. #etymology #etymologytok #history #wordorigins #booktok #books #classicliterature #literature #americanhistory </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7481743272214465838</guid>
+      <pubDate>Fri, 14 Mar 2025 19:05:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>Riffling vs. rifling through things. #etymology #etymologytok #history #language #booktok #editing #wordorigins </title>
+      <link>https://tiktok.com/@jesszafarris/video/7494319748876897582</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_owTUiRHAwYzIAEaC0AIAwcilCiBBJJfLBdAHBA.image.jpg" / &gt; Riffling vs. rifling through things. #etymology #etymologytok #history #language #booktok #editing #wordorigins </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7494319748876897582</guid>
+      <pubDate>Thu, 17 Apr 2025 16:28:24 +0000</pubDate>
+    </item>
+    <item>
+      <title>Oh deer! Not my usual content but I just came across this lady and her brand new wobbly bambinos. #wildlife #deer </title>
+      <link>https://tiktok.com/@jesszafarris/video/7505202801472032046</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_oIg0EABYEBBiAA7FvCAwIKAilfnUZJbWlkxIJ1.image.jpg" / &gt; Oh deer! Not my usual content but I just came across this lady and her brand new wobbly bambinos. #wildlife #deer </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7505202801472032046</guid>
+      <pubDate>Sat, 17 May 2025 00:20:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>Replying to @SirFoxx II I caught some extra bambi wobbles when I passed the same spot again later!</title>
+      <link>https://tiktok.com/@jesszafarris/video/7505207989557628202</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_oMoyiDAisIqzIRGgS4EJ3qI9Xa2fBfwBSwGoWn~tplv-tiktokx-origin.image.jpg" / &gt; Replying to @SirFoxx II I caught some extra bambi wobbles when I passed the same spot again later!</description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7505207989557628202</guid>
+      <pubDate>Sat, 17 May 2025 00:40:44 +0000</pubDate>
+    </item>
+    <item>
+      <title>I have a new favorite spider, hotwheels Sisyphus  #etymology #etymologytok #spider #wildlife #wordorigins #arachnology </title>
+      <link>https://tiktok.com/@jesszafarris/video/7506594589562899758</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_oQNVzmz4gEgIBihIhCSAEZPikygABiaAAsAEA.image.jpg" / &gt; I have a new favorite spider, hotwheels Sisyphus  #etymology #etymologytok #spider #wildlife #wordorigins #arachnology </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7506594589562899758</guid>
+      <pubDate>Tue, 20 May 2025 18:22:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>The etymology of piebald and magpie! NOTES: Pica is pronounced “peeka” in Latin but “pigh-ca” in English, and probably should have distinguished that. Pica is also an English term from typesetting, likely named after a book that had a pied/mottled look to</title>
+      <link>https://tiktok.com/@jesszafarris/video/7507685148687895854</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_oswAgFCRSDoAMIEgqgAYA7A8EfiJelDETaIAKA.image.jpg" / &gt; The etymology of piebald and magpie! NOTES: Pica is pronounced “peeka” in Latin but “pigh-ca” in English, and probably should have distinguished that. Pica is also an English term from typesetting, likely named after a book that had a pied/mottled look to</description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7507685148687895854</guid>
+      <pubDate>Fri, 23 May 2025 16:53:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>Recently on a musical etymology episode of Words Unravelled with @RobWords, our discussion of the origins of the words violin and fiddle ended in a joke or two… #etymology #history #joke #funny #wordorigins #etymologytok </title>
+      <link>https://tiktok.com/@jesszafarris/video/7517685513835351309</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_oIk4YBAF4PAEBLIavAQDJBggiiazl4AA2EBUt.image.jpg" / &gt; Recently on a musical etymology episode of Words Unravelled with @RobWords, our discussion of the origins of the words violin and fiddle ended in a joke or two… #etymology #history #joke #funny #wordorigins #etymologytok </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7517685513835351309</guid>
+      <pubDate>Thu, 19 Jun 2025 15:40:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mountweazels, nihilartikels, and paper towns! Learn about the world of fictitious entries. #etymology #history #wordorigins #etymologytok #wordnerd #edutok #authortok #booktok </title>
+      <link>https://tiktok.com/@jesszafarris/video/7518521244996619575</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_o4PVDfwMEEaSQrTZLJogFBiuQfRyALrS6D19UE~tplv-tiktokx-origin.image.jpg" / &gt; Mountweazels, nihilartikels, and paper towns! Learn about the world of fictitious entries. #etymology #history #wordorigins #etymologytok #wordnerd #edutok #authortok #booktok </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7518521244996619575</guid>
+      <pubDate>Sat, 21 Jun 2025 21:42:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>Be egregious! 💪 #etymology #history #wordorigins #etymologytok #wordnerd #vocabulary #edutok #authortok #booktok </title>
+      <link>https://tiktok.com/@jesszafarris/video/7524738609421897015</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_owDIi5pNwe4IAEbg0AIBDwiNCTBtJpPPBvANBA.image.jpg" / &gt; Be egregious! 💪 #etymology #history #wordorigins #etymologytok #wordnerd #vocabulary #edutok #authortok #booktok </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7524738609421897015</guid>
+      <pubDate>Tue, 08 Jul 2025 15:49:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>A fun video I worked up in collaboration with a certain dictionary site a few months ago! What’s an eggcorn that bothers you? (Reposted here with permission.) #etymology #history #wordorigins #etymologytok #wordnerd </title>
+      <link>https://tiktok.com/@jesszafarris/video/7527411052762516749</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_oEX2jXQmQEkAIAHRvE7LVBkIIfGAe1Ao7AeCJ5.image.jpg" / &gt; A fun video I worked up in collaboration with a certain dictionary site a few months ago! What’s an eggcorn that bothers you? (Reposted here with permission.) #etymology #history #wordorigins #etymologytok #wordnerd </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7527411052762516749</guid>
+      <pubDate>Tue, 15 Jul 2025 20:39:59 +0000</pubDate>
+    </item>
+    <item>
+      <title>Replying to @Jess Zafarris | Author do you know your eggcorn from your malapropism? Originally made this with a certain fun dictionary site! Shared with permission. #etymology #history #wordorigins #malapropism #eggcorn </title>
+      <link>https://tiktok.com/@jesszafarris/video/7527763429105405197</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_os6fAYShoAvfczL4iAjfKQDkeONnvAMfgAYSAU.image.jpg" / &gt; Replying to @Jess Zafarris | Author do you know your eggcorn from your malapropism? Originally made this with a certain fun dictionary site! Shared with permission. #etymology #history #wordorigins #malapropism #eggcorn </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7527763429105405197</guid>
+      <pubDate>Wed, 16 Jul 2025 19:27:32 +0000</pubDate>
+    </item>
+    <item>
+      <title>Gloria Lockerman, the girl who taught us about antidisestablishmentarianism. #etymology #history #wordnerd #education #englishteacher #authorsoftiktok #booktok #wordoftheday #longwords #obscurewords #womenshistorymonth #blackhistory </title>
+      <link>https://tiktok.com/@jesszafarris/video/7343022028590517547</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_oE9yBnyAiR6iNDpAlwtE8o3AIPo7BBA4CfOIZJ.image.jpg" / &gt; Gloria Lockerman, the girl who taught us about antidisestablishmentarianism. #etymology #history #wordnerd #education #englishteacher #authorsoftiktok #booktok #wordoftheday #longwords #obscurewords #womenshistorymonth #blackhistory </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7343022028590517547</guid>
+      <pubDate>Tue, 05 Mar 2024 23:15:54 +0000</pubDate>
+    </item>
+    <item>
+      <title>Etymology magic in Disney’s Robin Hood! #etymology #history #literature #movies #robinhood #etymologytok #wordorigins #language #linguistics #booktok @disney </title>
+      <link>https://tiktok.com/@jesszafarris/video/7207548885814807850</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/jesszafarris/screenshot_33f2a129e593460ba3123cab436db62d.image.jpg" / &gt; Etymology magic in Disney’s Robin Hood! #etymology #history #literature #movies #robinhood #etymologytok #wordorigins #language #linguistics #booktok @disney </description>
+      <guid isPermaLink="false">https://tiktok.com/@jesszafarris/video/7207548885814807850</guid>
+      <pubDate>Mon, 06 Mar 2023 21:30:57 +0000</pubDate>
     </item>
   </channel>
 </rss>

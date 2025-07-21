@@ -1,16 +1,263 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
-    <title>TikTok - @aaron.higashi</title>
-    <description>Latest videos from @aaron.higashi</description>
-    <link>https://www.tiktok.com/@aaron.higashi</link>
-    <pubDate>Mon, 21 Jul 2025 13:02:37 GMT</pubDate>
+    <title>aaron.higashi TikTok</title>
+    <link>https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/rss/aaron.higashi.xml</link>
+    <description>OK Boomer, all the latest TikToks from aaron.higashi</description>
+    <atom:link href="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/rss/aaron.higashi.xml" rel="self"/>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <image>
+      <url>https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/tiktok-rss.png</url>
+      <title>aaron.higashi TikTok</title>
+      <link>https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/rss/aaron.higashi.xml</link>
+    </image>
+    <language>en</language>
+    <lastBuildDate>Fri, 18 Jul 2025 19:15:39 +0000</lastBuildDate>
     <item>
-      <title>Sample video from aaron.higashi</title>
-      <link>https://www.tiktok.com/@aaron.higashi/video/sample-202507211302</link>
-      <description>RSS feed for @aaron.higashi - Generated on 2025-07-21 13:02:37</description>
-      <pubDate>Mon, 21 Jul 2025 13:02:37 GMT</pubDate>
-      <guid>sample-aaron.higashi-202507211302</guid>
+      <title>Replying to @303dude </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7505033245025701163</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_oE6CTvAEE0ipg0nBsA8PAYikBBA4KcoAAIahE.image.jpg" / &gt; Replying to @303dude </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7505033245025701163</guid>
+      <pubDate>Fri, 16 May 2025 13:22:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>Replying to @cldbrwszn </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7505403581315501354</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_oYwtCvN02WGAioAAmEgAaBQEk9AI4BbBijcEi.image.jpg" / &gt; Replying to @cldbrwszn </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7505403581315501354</guid>
+      <pubDate>Sat, 17 May 2025 13:20:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>Replying to @summerlake23 My wife and kids are Jewish. I’m super proud to be included in your prejudice against them. </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7505783311667694890</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_oIviaBA4BhijBnEpLnEEIEwAgRUV5TmQm3CUU~tplv-tiktokx-origin.image.jpg" / &gt; Replying to @summerlake23 My wife and kids are Jewish. I’m super proud to be included in your prejudice against them. </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7505783311667694890</guid>
+      <pubDate>Sun, 18 May 2025 13:53:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>#stitch with @Under the Hood Also, look at this dude’s face when the concubines get mentioned 😆</title>
+      <link>https://tiktok.com/@aaron.higashi/video/7506139780053241134</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_ogAEvP8fI0i3AJBRBvBrTViZApkFwA0E09KAIC.image.jpg" / &gt; #stitch with @Under the Hood Also, look at this dude’s face when the concubines get mentioned 😆</description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7506139780053241134</guid>
+      <pubDate>Mon, 19 May 2025 12:57:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>#fyp #bible </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7506233274428296494</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_o0iQIqGsILAWRVDAgjfGkjZBvpfn8vQtyHFeC0~tplv-tiktokx-origin.image.jpg" / &gt; #fyp #bible </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7506233274428296494</guid>
+      <pubDate>Mon, 19 May 2025 18:59:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>#stitch with @Cristero77 Check out Tom Stark’s freely available essay “Is God a Moral Compromiser?” The Pentateuch’s laws concerning Israelite women and foreign chattel slaves (Exodus 21:1-11, Leviticus 25:44-46) are not merely described or abstractly reg</title>
+      <link>https://tiktok.com/@aaron.higashi/video/7506265873330621742</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_oo4A3kBRIA1kr7TPrCi4AWEAMEudiBagnhWAB.image.jpg" / &gt; #stitch with @Cristero77 Check out Tom Stark’s freely available essay “Is God a Moral Compromiser?” The Pentateuch’s laws concerning Israelite women and foreign chattel slaves (Exodus 21:1-11, Leviticus 25:44-46) are not merely described or abstractly reg</description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7506265873330621742</guid>
+      <pubDate>Mon, 19 May 2025 21:05:58 +0000</pubDate>
+    </item>
+    <item>
+      <title>Replying to @Phillip Burbo It’s important for Christians to know where the Bible stops and where our constructive theology begins. The doctrine of the Trinity, and indeed most significant Christian doctrines, are in the latter camp.</title>
+      <link>https://tiktok.com/@aaron.higashi/video/7506659270994169130</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_osvEMfQt0gYRD3AIA33EA2CSADLFE2bsoKLfAA.image.jpg" / &gt; Replying to @Phillip Burbo It’s important for Christians to know where the Bible stops and where our constructive theology begins. The doctrine of the Trinity, and indeed most significant Christian doctrines, are in the latter camp.</description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7506659270994169130</guid>
+      <pubDate>Tue, 20 May 2025 22:32:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>Replying to @AnonPhilGrad </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7507468364487347498</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_oo5v0uiiA2IhAIBEuBi0A4ABwdJpABdtPfFCc1.image.jpg" / &gt; Replying to @AnonPhilGrad </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7507468364487347498</guid>
+      <pubDate>Fri, 23 May 2025 02:52:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>QED #fyp #apologetics </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7507777267297242410</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_o0I85RCoSMhevFH32QBD8gAESODfAOpAoQA4EP~tplv-tiktokx-origin.image.jpg" / &gt; QED #fyp #apologetics </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7507777267297242410</guid>
+      <pubDate>Fri, 23 May 2025 22:50:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>Replying to @jondabomb5 </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7508135243224845611</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_owAQXemfjQEfBkHRE2DkwKFIArNZAA2IIzgAQI.image.jpg" / &gt; Replying to @jondabomb5 </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7508135243224845611</guid>
+      <pubDate>Sat, 24 May 2025 22:00:01 +0000</pubDate>
+    </item>
+    <item>
+      <title>Replying to @goateditz204 </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7508434328578297130</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_oo4ABUIaA3EgDEizrJ1ORvkAQAiXYBGANLkwW.image.jpg" / &gt; Replying to @goateditz204 </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7508434328578297130</guid>
+      <pubDate>Sun, 25 May 2025 17:20:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>Replying to @DoorDash Milne </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7509589055361813803</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_o0AIBiwoE30AKGC5IB3AEJiA9GPsaBf765A1XO~tplv-tiktokx-origin.image.jpg" / &gt; Replying to @DoorDash Milne </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7509589055361813803</guid>
+      <pubDate>Wed, 28 May 2025 20:01:35 +0000</pubDate>
+    </item>
+    <item>
+      <title>There’s no greater love than this, to lay down one’s unlimited breadsticks for a friend. </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7509625773117017390</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_ogo3slwIi9BAGJui8iBxA0jZ6ANBICAAElPmf0~tplv-tiktokx-origin.image.jpg" / &gt; There’s no greater love than this, to lay down one’s unlimited breadsticks for a friend. </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7509625773117017390</guid>
+      <pubDate>Wed, 28 May 2025 22:23:57 +0000</pubDate>
+    </item>
+    <item>
+      <title>#stitch with @ChristCrusader </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7510278535303613742</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_ocL2YAeQcA3BHfFAIVB7BjvEkTzeQa0AIPgAIG.image.jpg" / &gt; #stitch with @ChristCrusader </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7510278535303613742</guid>
+      <pubDate>Fri, 30 May 2025 16:37:24 +0000</pubDate>
+    </item>
+    <item>
+      <title>#greenscreen </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7510703128199597355</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_o8ADAap2mHoQfCCAqBD2uIUfSOwREDFgAzYEKc.image.jpg" / &gt; #greenscreen </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7510703128199597355</guid>
+      <pubDate>Sat, 31 May 2025 20:04:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Replying to @l4ndxn3 </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7510984310451604782</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_ow4ABYIaASEgDEi8JBdCgPPAWAiWkBzAxXk9J.image.jpg" / &gt; Replying to @l4ndxn3 </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7510984310451604782</guid>
+      <pubDate>Sun, 01 Jun 2025 14:15:45 +0000</pubDate>
+    </item>
+    <item>
+      <title>One of the great gifts of queer interpretation of the Bible is the demonstration of how unstable the metaphors used to justify heteronormativity really are. #pridemonth #fyp </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7511157326121045294</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_oEeRO8XIwgAfnAncRTevz8AuEAQFeJMDgQuGAW.image.jpg" / &gt; One of the great gifts of queer interpretation of the Bible is the demonstration of how unstable the metaphors used to justify heteronormativity really are. #pridemonth #fyp </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7511157326121045294</guid>
+      <pubDate>Mon, 02 Jun 2025 01:27:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Replying to @juliowithjesuschrist4l </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7512175444309986603</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_oItENCFQJIDSowAAvcAgfYEOoBQhRx4DSAeJNC.image.jpg" / &gt; Replying to @juliowithjesuschrist4l </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7512175444309986603</guid>
+      <pubDate>Wed, 04 Jun 2025 19:18:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>No Title</title>
+      <link>https://tiktok.com/@aaron.higashi/video/7512899811893579054</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_oAIDEfIAkAAFaElXCfjHnhfDA1DHHEAQsAXQdG~tplv-tiktokx-origin.image.jpg" / &gt; No Description</description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7512899811893579054</guid>
+      <pubDate>Fri, 06 Jun 2025 18:09:04 +0000</pubDate>
+    </item>
+    <item>
+      <title>#greenscreen https://thebiblefornormalpeople.com/product/who-wrote-the-bible/</title>
+      <link>https://tiktok.com/@aaron.higashi/video/7515056479213407534</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_owA9IiUvBE4dB2BgYUBaKyEC2ZMrNCjvcIiPC~tplv-tiktokx-origin.image.jpg" / &gt; #greenscreen https://thebiblefornormalpeople.com/product/who-wrote-the-bible/</description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7515056479213407534</guid>
+      <pubDate>Thu, 12 Jun 2025 13:37:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>#stitch with @Nate | Fit for His Kingdom People often describe an apparent tension between the teachings of Paul and the teachings of Jesus in the New Testament. In fact, no such tension exists. Not because there’s no tension at all, but rather because we</title>
+      <link>https://tiktok.com/@aaron.higashi/video/7515479882084748590</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_oAEw4BkiavIEABdjAQZUEAI1MzEAEgxvBWihp.image.jpg" / &gt; #stitch with @Nate | Fit for His Kingdom People often describe an apparent tension between the teachings of Paul and the teachings of Jesus in the New Testament. In fact, no such tension exists. Not because there’s no tension at all, but rather because we</description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7515479882084748590</guid>
+      <pubDate>Fri, 13 Jun 2025 17:00:52 +0000</pubDate>
+    </item>
+    <item>
+      <title>#stitch with @thefriendlyevangelist #greenscreen Communities of faith are the originators, curators, preservers, and interpreters of canons like the Bible, not the other way around. Whether it’s Jewish communities and the Hebrew Bible or the later Septuag</title>
+      <link>https://tiktok.com/@aaron.higashi/video/7518916397750045965</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_oQoASWxYHCJIIAFR8DYQIYeAAWEogNfC67HDEm.image.jpg" / &gt; #stitch with @thefriendlyevangelist #greenscreen Communities of faith are the originators, curators, preservers, and interpreters of canons like the Bible, not the other way around. Whether it’s Jewish communities and the Hebrew Bible or the later Septuag</description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7518916397750045965</guid>
+      <pubDate>Sun, 22 Jun 2025 23:16:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>Dr. Aaron Higashi and the Bible for Normal People present… “Who the @%!% Wrote the Bible?” https://thebiblefornormalpeople.com/classes/summer-school-2025/ @The Bible for Normal People </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7519992052692667661</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_oMlLpItIB1PeiAYVwiPRAuCNIiMYR0BCF5rI9c~tplv-tiktokx-origin.image.jpg" / &gt; Dr. Aaron Higashi and the Bible for Normal People present… “Who the @%!% Wrote the Bible?” https://thebiblefornormalpeople.com/classes/summer-school-2025/ @The Bible for Normal People </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7519992052692667661</guid>
+      <pubDate>Wed, 25 Jun 2025 20:50:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>Replying to @gits_n_shiggles24 </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7521139858912316686</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_o8GHnfG3LAW9w0BfAj9IAEqISLnQgkAeAQO2kI.image.jpg" / &gt; Replying to @gits_n_shiggles24 </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7521139858912316686</guid>
+      <pubDate>Sat, 28 Jun 2025 23:04:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>@Holy Post Media </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7521359018514763022</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_o4iYOEkvHg8ihB4BlPbBAAbdAa6IAEGsE44pX.image.jpg" / &gt; @Holy Post Media </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7521359018514763022</guid>
+      <pubDate>Sun, 29 Jun 2025 13:15:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>Replying to @Someone </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7521824509935045901</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_oAWdAiB7ki41gAxABIPB56mjRGu4EAHiEiaL8.image.jpg" / &gt; Replying to @Someone </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7521824509935045901</guid>
+      <pubDate>Mon, 30 Jun 2025 19:20:58 +0000</pubDate>
+    </item>
+    <item>
+      <title>Replying to @brandontibbits #greenscreen </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7522197687815392526</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_ocEABI43DoB3QAIk4AA6BEajNvkMLgziwbiGv.image.jpg" / &gt; Replying to @brandontibbits #greenscreen </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7522197687815392526</guid>
+      <pubDate>Tue, 01 Jul 2025 19:29:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>#stitch with @ThinkCatholic.org </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7522470962336369975</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_o4PAmivIBgAli7wdIZE8Ba4LIwAGECAkRBwUL.image.jpg" / &gt; #stitch with @ThinkCatholic.org </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7522470962336369975</guid>
+      <pubDate>Wed, 02 Jul 2025 13:10:27 +0000</pubDate>
+    </item>
+    <item>
+      <title>#greenscreen </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7523253130625092919</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_o4tZBfz0EiWSIu9DCAogiCknEsRfAAz9BDkAzV.image.jpg" / &gt; #greenscreen </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7523253130625092919</guid>
+      <pubDate>Fri, 04 Jul 2025 15:44:42 +0000</pubDate>
+    </item>
+    <item>
+      <title>Replying to @thecattlebaron #greenscreen </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7524411870485253431</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_oAMkABBMks4sgA6ABIPBO74UvG0FEADiEiawS.image.jpg" / &gt; Replying to @thecattlebaron #greenscreen </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7524411870485253431</guid>
+      <pubDate>Mon, 07 Jul 2025 18:41:40 +0000</pubDate>
+    </item>
+    <item>
+      <title>Replying to @robertbuckingham.th.d </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7527381062503238967</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_osoqoDIrFADMgBAbEtBECtD2BSFVRdpE2AnffA.image.jpg" / &gt; Replying to @robertbuckingham.th.d </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7527381062503238967</guid>
+      <pubDate>Tue, 15 Jul 2025 18:43:42 +0000</pubDate>
+    </item>
+    <item>
+      <title>Replying to @kitkathowzthat #greenscreen </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7527718474685156621</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_oEwDFCfE9EnAVBQ3EAABEf0cS1dgoIAXlD0Rg8.image.jpg" / &gt; Replying to @kitkathowzthat #greenscreen </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7527718474685156621</guid>
+      <pubDate>Wed, 16 Jul 2025 16:32:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>#stitch with @austinlowe306 A combination of apologetic attempts to exonerate David and bad readings of the plain meaning of 2 Samuel 11:2 causes people to misconstrue the story and think Bathsheba was flaunting herself in an effort to seduce David. </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7528055997001207053</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_ooE5IAHAjBJeApDQuFBEfJvRoceIaEAAkqQxEp.image.jpg" / &gt; #stitch with @austinlowe306 A combination of apologetic attempts to exonerate David and bad readings of the plain meaning of 2 Samuel 11:2 causes people to misconstrue the story and think Bathsheba was flaunting herself in an effort to seduce David. </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7528055997001207053</guid>
+      <pubDate>Thu, 17 Jul 2025 14:22:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>Replying to @madmike75 </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7528502593644006669</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_oQIV6APqpkAmmEIQBeFfHEAA6nRA1JEnjADfIZ.image.jpg" / &gt; Replying to @madmike75 </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7528502593644006669</guid>
+      <pubDate>Fri, 18 Jul 2025 19:15:39 +0000</pubDate>
+    </item>
+    <item>
+      <title>#greenscreen </title>
+      <link>https://tiktok.com/@aaron.higashi/video/7528463115575479566</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/aaron.higashi/screenshot_oInckFDCjIHkpQ8zI0EQPlCAeDPAYyxzeQfmQj~tplv-tiktokx-origin.image.jpg" / &gt; #greenscreen </description>
+      <guid isPermaLink="false">https://tiktok.com/@aaron.higashi/video/7528463115575479566</guid>
+      <pubDate>Fri, 18 Jul 2025 16:42:47 +0000</pubDate>
     </item>
   </channel>
 </rss>
