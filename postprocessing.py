@@ -2,7 +2,7 @@ import os
 import asyncio
 import csv
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from feedgen.feed import FeedGenerator
 #from tiktokapipy.api import TikTokAPI
 from TikTokApi import TikTokApi
@@ -52,11 +52,34 @@ async def user_videos():
             async with TikTokApi() as api:
                 await api.create_sessions(num_sessions=1, sleep_after=10, headless=False)
                 try:
-                    # Get the user object from the API - THIS WAS MISSING!
+                    # Get the user object from the API
                     ttuser = api.user(user)
                     user_data = await ttuser.info()
                     #print(user_data)
-                    async for video in ttuser.videos(count=10):
+                    
+                    # COLLECT ALL VIDEOS FIRST
+                    videos = []
+                    async for video in ttuser.videos(count=20):  # Get more videos to ensure we have recent ones
+                        videos.append(video)
+                    
+                    # SORT BY CREATION TIME (NEWEST FIRST)
+                    videos.sort(key=lambda x: x.as_dict['createTime'], reverse=True)
+                    
+                    # FILTER TO ONLY RECENT VIDEOS (last 60 days)
+                    cutoff_date = datetime.now() - timedelta(days=60)
+                    recent_videos = []
+                    
+                    for video in videos:
+                        video_date = datetime.fromtimestamp(video.as_dict['createTime'])
+                        if video_date > cutoff_date:
+                            recent_videos.append(video)
+                        if len(recent_videos) >= 10:  # Limit to 10 most recent videos
+                            break
+                    
+                    print(f"Found {len(recent_videos)} recent videos for {user}")
+                    
+                    # PROCESS THE SORTED, RECENT VIDEOS
+                    for video in recent_videos:
                         fe = fg.add_entry()
                         link = "https://tiktok.com/@" + user + "/video/" + video.id
                         fe.id(link)
@@ -64,6 +87,10 @@ async def user_videos():
                         fe.published(ts)
                         fe.updated(ts)
                         updated = max(ts, updated) if updated else ts
+                        
+                        # Debug: Print video date to verify sorting
+                        print(f"Processing video from {ts.strftime('%Y-%m-%d %H:%M:%S')}: {video.as_dict.get('desc', 'No title')[:50]}...")
+                        
                         if video.as_dict['desc']:
                             fe.title(video.as_dict['desc'][0:255])
                         else:
@@ -85,16 +112,14 @@ async def user_videos():
                                     await runscreenshot(playwright, videourl, screenshotpath)
                             screenshoturl =  ghRawURL + screenshotsubpath
                             content = '<img src="' + screenshoturl + '" / > ' + content    
-                            #content = screenshoturl + ' ' + content    
-                            #content = '<media:content url="' + screenshoturl + '" type="image/jpeg" medium="image"> ' + content 
-                            #content = '<![CDATA[<img src="' + screenshoturl + '" />]]> ' + content
                         fe.content(content)
+                    
                     fg.updated(updated)
                     fg.rss_file('rss/' + user + '.xml', pretty=True) # Write the RSS feed to a file
-                        #print(video)
-                        #print(video.as_dict)
+                    print(f"RSS feed updated for {user} with {len(recent_videos)} videos")
+                        
                 except Exception as e:
-                    print(e)
+                    print(f"Error processing {user}: {e}")
 
 if __name__ == "__main__":
     asyncio.run(user_videos())
