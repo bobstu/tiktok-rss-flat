@@ -79,7 +79,7 @@ async def user_videos():
                     print(f"Found {len(recent_videos)} recent videos for {user}")
                     
                     # PROCESS THE SORTED, RECENT VIDEOS
-                    for video in recent_videos:
+                    for video in reversed(recent_videos):  #added reversed order
                         fe = fg.add_entry()
                         link = "https://tiktok.com/@" + user + "/video/" + video.id
                         fe.id(link)
