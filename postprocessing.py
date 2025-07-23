@@ -121,5 +121,27 @@ async def user_videos():
                 except Exception as e:
                     print(f"Error processing {user}: {e}")
 
+# Add repost detection to your existing postprocessing.py
+async def analyze_video_type(video, username):
+    video_data = video.as_dict
+    
+    # Check for explicit repost indicators
+    if any(field in video_data for field in ['isRepost', 'repost', 'shareInfo']):
+        return 'repost'
+    
+    # Check for duet/stitch
+    if 'duetInfo' in video_data:
+        return 'duet'
+    if 'stitchInfo' in video_data:
+        return 'stitch'
+    
+    # Check if different author
+    video_author = video_data.get('author', {}).get('uniqueId', '').lower()
+    if video_author != username.lower() and video_author:
+        return 'cross_post'
+    
+    return 'original'
+
+
 if __name__ == "__main__":
     asyncio.run(user_videos())
