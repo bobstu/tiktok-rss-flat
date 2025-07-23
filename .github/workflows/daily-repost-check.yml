@@ -1,0 +1,25 @@
+name: Daily Repost Check
+
+on:
+  schedule:
+    - cron: '0 16 * * *'  # Run daily at 12pm EST
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  check-reposts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      
+      - name: Install dependencies
+        run: |
+          pip install playwright requests
+          playwright install chromium
+      
+      - name: Run daily repost check
+        run: python3 daily_repost_check.py
