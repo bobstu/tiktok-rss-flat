@@ -78,41 +78,70 @@ async def user_videos():
                     
                     print(f"Found {len(recent_videos)} recent videos for {user}")
                     
-                    # PROCESS THE SORTED, RECENT VIDEOS
-                    for video in reversed(recent_videos):  #added reversed order
-                        fe = fg.add_entry()
-                        link = "https://tiktok.com/@" + user + "/video/" + video.id
-                        fe.id(link)
-                        ts = datetime.fromtimestamp(video.as_dict['createTime'], timezone.utc)
-                        fe.published(ts)
-                        fe.updated(ts)
-                        updated = max(ts, updated) if updated else ts
+# Replace the video processing loop in your postprocessing.py with this enhanced version:
+
+# PROCESS THE SORTED, RECENT VIDEOS (with repost detection)
+for video in reversed(recent_videos):
+    fe = fg.add_entry()
+    link = "https://tiktok.com/@" + user + "/video/" + video.id
+    fe.id(link)
+    ts = datetime.fromtimestamp(video.as_dict['createTime'], timezone.utc)
+    fe.published(ts)
+    fe.updated(ts)
+    updated = max(ts, updated) if updated else ts
+    
+    # ANALYZE VIDEO TYPE FOR REPOST DETECTION
+    video_type = await analyze_video_type(video, user)
+    
+    # Debug: Print video info including type
+    print(f"Processing video from {ts.strftime('%Y-%m-%d %H:%M:%S')}: {video_type.upper()} - {video.as_dict.get('desc', 'No title')[:50]}...")
+    
+    # BUILD ENHANCED TITLE WITH TYPE INDICATOR
+    original_title = video.as_dict.get('desc', 'No Title')
+    if video_type != 'original':
+        # Add type prefix for interactive content
+        type_prefix = {
+            'repost': '[REPOST]',
+            'duet': '[DUET]', 
+            'stitch': '[STITCH]',
+            'cross_post': '[SHARED]'
+        }
+        enhanced_title = f"{type_prefix.get(video_type, '')} {original_title}"
+    else:
+        enhanced_title = original_title
+    
+    # Set the enhanced title (truncated to 255 chars)
+    fe.title(enhanced_title[:255])
+    fe.link(href=link)
+    
+    # BUILD ENHANCED CONTENT WITH AUTHOR INFO
+    if original_title:
+        content = original_title[:255]
+    else:
+        content = "No Description"
+    
+    # Add original author info for cross-posts/reposts
+    if video_type in ['cross_post', 'repost']:
+        original_author = video.as_dict.get('author', {}).get('uniqueId', 'Unknown')
+        content = f"[Original by @{original_author}] {content}"
+    
+    # Add screenshot handling (keep existing code)
+    if video.as_dict['video']['cover']:
+        videourl = video.as_dict['video']['cover']
+        parsed_url = urlparse(videourl)
+        path_segments = parsed_url.path.split('/')
+        last_segment = [seg for seg in path_segments if seg][-1]
+        screenshotsubpath = "thumbnails/" + user + "/screenshot_" + last_segment + ".jpg"
+        screenshotpath = os.path.dirname(os.path.realpath(__file__)) + "/" + screenshotsubpath
+        if not os.path.isfile(screenshotpath):
+            async with async_playwright() as playwright:
+                await runscreenshot(playwright, videourl, screenshotpath)
+        screenshoturl = ghRawURL + screenshotsubpath
+        content = '<img src="' + screenshoturl + '" / > ' + content    
+    
+    fe.content(content)
                         
-                        # Debug: Print video date to verify sorting
-                        print(f"Processing video from {ts.strftime('%Y-%m-%d %H:%M:%S')}: {video.as_dict.get('desc', 'No title')[:50]}...")
-                        
-                        if video.as_dict['desc']:
-                            fe.title(video.as_dict['desc'][0:255])
-                        else:
-                            fe.title("No Title")
-                        fe.link(href=link)
-                        if video.as_dict['desc']:
-                            content = video.as_dict['desc'][0:255]
-                        else:
-                            content = "No Description"
-                        if video.as_dict['video']['cover']:
-                            videourl = video.as_dict['video']['cover']
-                            parsed_url = urlparse(videourl)
-                            path_segments = parsed_url.path.split('/')
-                            last_segment = [seg for seg in path_segments if seg][-1]
-                            screenshotsubpath = "thumbnails/" + user + "/screenshot_" + last_segment + ".jpg"
-                            screenshotpath = os.path.dirname(os.path.realpath(__file__)) + "/" + screenshotsubpath
-                            if not os.path.isfile(screenshotpath):
-                                async with async_playwright() as playwright:
-                                    await runscreenshot(playwright, videourl, screenshotpath)
-                            screenshoturl =  ghRawURL + screenshotsubpath
-                            content = '<img src="' + screenshoturl + '" / > ' + content    
-                        fe.content(content)
+
                     
                     fg.updated(updated)
                     fg.rss_file('rss/' + user + '.xml', pretty=True) # Write the RSS feed to a file
