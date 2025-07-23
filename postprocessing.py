@@ -31,27 +31,6 @@ async def runscreenshot(playwright: Playwright, url, screenshotpath):
     await page.screenshot(path=screenshotpath, quality = 20, type = 'jpeg')
     await browser.close()
 
-# MOVE FUNCTION DEFINITION BEFORE IT'S USED
-async def analyze_video_type(video, username):
-    video_data = video.as_dict
-    
-    # Check for explicit repost indicators
-    if any(field in video_data for field in ['isRepost', 'repost', 'shareInfo']):
-        return 'repost'
-    
-    # Check for duet/stitch
-    if 'duetInfo' in video_data:
-        return 'duet'
-    if 'stitchInfo' in video_data:
-        return 'stitch'
-    
-    # Check if different author
-    video_author = video_data.get('author', {}).get('uniqueId', '').lower()
-    if video_author != username.lower() and video_author:
-        return 'cross_post'
-    
-    return 'original'
-
 async def user_videos():
     with open('subscriptions.csv') as f:
         cf = csv.DictReader(f, fieldnames=['username'])
@@ -99,7 +78,7 @@ async def user_videos():
                     
                     print(f"Found {len(recent_videos)} recent videos for {user}")
                     
-                    # PROCESS THE SORTED, RECENT VIDEOS (with repost detection)
+                    # PROCESS THE SORTED, RECENT VIDEOS (newest first in RSS)
                     for video in reversed(recent_videos):
                         fe = fg.add_entry()
                         link = "https://tiktok.com/@" + user + "/video/" + video.id
@@ -109,42 +88,18 @@ async def user_videos():
                         fe.updated(ts)
                         updated = max(ts, updated) if updated else ts
                         
-                        # ANALYZE VIDEO TYPE FOR REPOST DETECTION
-                        video_type = await analyze_video_type(video, user)
+                        # Debug: Print video date to verify sorting
+                        print(f"Processing video from {ts.strftime('%Y-%m-%d %H:%M:%S')}: {video.as_dict.get('desc', 'No title')[:50]}...")
                         
-                        # Debug: Print video info including type
-                        print(f"Processing video from {ts.strftime('%Y-%m-%d %H:%M:%S')}: {video_type.upper()} - {video.as_dict.get('desc', 'No title')[:50]}...")
-                        
-                        # BUILD ENHANCED TITLE WITH TYPE INDICATOR
-                        original_title = video.as_dict.get('desc', 'No Title')
-                        if video_type != 'original':
-                            # Add type prefix for interactive content
-                            type_prefix = {
-                                'repost': '[REPOST]',
-                                'duet': '[DUET]', 
-                                'stitch': '[STITCH]',
-                                'cross_post': '[SHARED]'
-                            }
-                            enhanced_title = f"{type_prefix.get(video_type, '')} {original_title}"
+                        if video.as_dict['desc']:
+                            fe.title(video.as_dict['desc'][0:255])
                         else:
-                            enhanced_title = original_title
-                        
-                        # Set the enhanced title (truncated to 255 chars)
-                        fe.title(enhanced_title[:255])
+                            fe.title("No Title")
                         fe.link(href=link)
-                        
-                        # BUILD ENHANCED CONTENT WITH AUTHOR INFO
-                        if original_title:
-                            content = original_title[:255]
+                        if video.as_dict['desc']:
+                            content = video.as_dict['desc'][0:255]
                         else:
                             content = "No Description"
-                        
-                        # Add original author info for cross-posts/reposts
-                        if video_type in ['cross_post', 'repost']:
-                            original_author = video.as_dict.get('author', {}).get('uniqueId', 'Unknown')
-                            content = f"[Original by @{original_author}] {content}"
-                        
-                        # Add screenshot handling (keep existing code)
                         if video.as_dict['video']['cover']:
                             videourl = video.as_dict['video']['cover']
                             parsed_url = urlparse(videourl)
@@ -157,7 +112,6 @@ async def user_videos():
                                     await runscreenshot(playwright, videourl, screenshotpath)
                             screenshoturl = ghRawURL + screenshotsubpath
                             content = '<img src="' + screenshoturl + '" / > ' + content    
-                        
                         fe.content(content)
                     
                     fg.updated(updated)
