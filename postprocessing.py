@@ -10,6 +10,50 @@ import config
 from playwright.async_api import async_playwright, Playwright
 from pathlib import Path
 from urllib.parse import urlparse
+import requests
+import json
+
+# Configuration for notifications
+NTFY_SERVER = "http://192.168.0.57:2586"
+NTFY_TOPIC = "tiktok-alerts"
+
+def send_notification(username, video_title, video_link):
+    """Send notification about new TikTok video"""
+    try:
+        title = f"New TikTok: @{username}"
+        message = f"{video_title[:100]}...\n{video_link}"
+        
+        response = requests.post(
+            f"{NTFY_SERVER}/{NTFY_TOPIC}",
+            data=message.encode('utf-8'),
+            headers={
+                "Title": title,
+                "Tags": "tiktok,video",
+                "Content-Type": "text/plain; charset=utf-8"
+            },
+            timeout=10
+        )
+        print(f"✅ Notification sent for {username}")
+        return True
+    except Exception as e:
+        print(f"❌ Failed to send notification for {username}: {e}")
+        return False
+
+def load_video_cache():
+    """Load previously processed video IDs"""
+    try:
+        with open('video_cache.json', 'r') as f:
+            return json.load(f)
+    except:
+        return {}
+
+def save_video_cache(cache):
+    """Save processed video IDs"""
+    try:
+        with open('video_cache.json', 'w') as f:
+            json.dump(cache, f, indent=2)
+    except Exception as e:
+        print(f"Error saving cache: {e}")
 
 # Add browser context options to simulate real browser
 context_options = {
@@ -78,10 +122,17 @@ async def user_videos():
                     
                     print(f"Found {len(recent_videos)} recent videos for {user}")
                     
+                    # Load cache of previously processed videos
+                    video_cache = load_video_cache()
+                    user_cache = video_cache.get(user, [])
+                    new_videos = []
+                    
                     # PROCESS THE SORTED, RECENT VIDEOS (newest first in RSS)
                     for video in reversed(recent_videos):
+                        video_id = video.id
+                        
                         fe = fg.add_entry()
-                        link = "https://tiktok.com/@" + user + "/video/" + video.id
+                        link = "https://tiktok.com/@" + user + "/video/" + video_id
                         fe.id(link)
                         ts = datetime.fromtimestamp(video.as_dict['createTime'], timezone.utc)
                         fe.published(ts)
@@ -93,13 +144,17 @@ async def user_videos():
                         
                         if video.as_dict['desc']:
                             fe.title(video.as_dict['desc'][0:255])
+                            video_title = video.as_dict['desc'][0:255]
                         else:
                             fe.title("No Title")
+                            video_title = "No Title"
+                        
                         fe.link(href=link)
                         if video.as_dict['desc']:
                             content = video.as_dict['desc'][0:255]
                         else:
                             content = "No Description"
+                        
                         if video.as_dict['video']['cover']:
                             videourl = video.as_dict['video']['cover']
                             parsed_url = urlparse(videourl)
@@ -112,14 +167,29 @@ async def user_videos():
                                     await runscreenshot(playwright, videourl, screenshotpath)
                             screenshoturl = ghRawURL + screenshotsubpath
                             content = '<img src="' + screenshoturl + '" / > ' + content    
+                        
                         fe.content(content)
+                        
+                        # Check if this is a new video
+                        if video_id not in user_cache:
+                            new_videos.append({
+                                'id': video_id,
+                                'title': video_title,
+                                'link': link
+                            })
+                            user_cache.append(video_id)
+                    
+                    # Send notifications for new videos
+                    for new_video in new_videos:
+                        send_notification(user, new_video['title'], new_video['link'])
+                    
+                    # Update cache (keep only last 50 videos per user)
+                    video_cache[user] = user_cache[-50:]
+                    save_video_cache(video_cache)
                     
                     fg.updated(updated)
-                    fg.rss_file('rss/' + user + '.xml', pretty=True) # Write the RSS feed to a file
-                    print(f"RSS feed updated for {user} with {len(recent_videos)} videos")
-                        
-                except Exception as e:
-                    print(f"Error processing {user}: {e}")
+                    fg.rss_file('rss/' + user + '.xml', pretty=True)
+                    print(f"RSS feed updated for {user} with {len(recent_videos)} videos ({len(new_videos)} new)")
 
 if __name__ == "__main__":
     asyncio.run(user_videos())
