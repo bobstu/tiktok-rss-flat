@@ -191,5 +191,8 @@ async def user_videos():
                     fg.rss_file('rss/' + user + '.xml', pretty=True)
                     print(f"RSS feed updated for {user} with {len(recent_videos)} videos ({len(new_videos)} new)")
 
+                except Exception as e:
+                    print(f"Error processing {user}: {e}")
+
 if __name__ == "__main__":
     asyncio.run(user_videos())
